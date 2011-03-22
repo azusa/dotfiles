@@ -1,4 +1,5 @@
 startup_message off
 escape ^Z^Z
 hardstatus alwayslastline " %`%-w%{=b bw}%n %t%{-}%+w"
+termcapinfo xterm* ti@:te@
 
