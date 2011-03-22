@@ -19,3 +19,5 @@ augroup UjihisaRSpec
 	    autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
 augroup END
 
+set t_kb=
+
