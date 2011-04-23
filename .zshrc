@@ -19,4 +19,6 @@ export EDITOR=vi
 
 bindkey -e
 
-screen -xR
+if [ -f .zshlocal ]; then
+	source .zshlocal
+fi
