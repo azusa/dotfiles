@@ -15,6 +15,8 @@ filetype plugin on
 
 let g:quickrun_config = {}
 let g:quickrun_config['ruby.rspec'] = {'command': 'rspec'}
+let g:quickrun_config['php'] = {'command': 'phpunit'}
+
 
 augroup UjihisaRSpec
 	  autocmd!
