@@ -26,6 +26,10 @@ augroup END
 set t_kb=
 autocmd BufNewFile *_spec.rb 0r $HOME/.vim/template/rspec
 autocmd BufNewFile *[^_spec].rb 0r $HOME/.vim/template/ruby
+
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = "/Users/azusa/bin/ng"
+
 "vundle
 set nocompatible
 filetype off                   " (1)
