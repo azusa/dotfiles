@@ -26,3 +26,16 @@ augroup END
 set t_kb=
 autocmd BufNewFile *_spec.rb 0r $HOME/.vim/template/rspec
 autocmd BufNewFile *[^_spec].rb 0r $HOME/.vim/template/ruby
+"vundle
+set nocompatible
+filetype off                   " (1)
+
+set rtp+=~/.vim/vundle.git/    " (2)
+call vundle#rc()               " (3)
+
+Bundle 'thinca/vim-ref'
+Bundle 'vim-ruby/vim-ruby'
+
+filetype plugin indent on     " (5)
+
+let g:rubycomplete_buffer_loading = 1
