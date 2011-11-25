@@ -27,3 +27,18 @@ augroup END
 set t_kb=
 autocmd BufNewFile *_spec.rb 0r $HOME/.vim/template/rspec
 autocmd BufNewFile *[^_spec].rb 0r $HOME/.vim/template/ruby
+
+" vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/vundle.git/
+call vundle#rc() " (3)
+"
+Bundle 'thinca/vim-ref'
+"
+filetype plugin indent on
+
+let g:ref_phpmanual_path = $HOME . '/.vim/php-chunked-xhtml'
+let g:ref_phpmanual_cmd='w3m %s'
+
