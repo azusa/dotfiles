@@ -44,3 +44,5 @@ Bundle 'vim-ruby/vim-ruby'
 filetype plugin indent on     " (5)
 
 let g:rubycomplete_buffer_loading = 1
+
+set clipboard=unnamed,autoselect
