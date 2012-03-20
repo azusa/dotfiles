@@ -1,7 +1,6 @@
 set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,utf-8,euc-jp,ucs-2le,ucs-2,cp932
 set number
-complcache
 set showmode
 set laststatus=2
 set statusline=%t[%{&fenc!=''?&fenc:&enc}][%{&ff}]
