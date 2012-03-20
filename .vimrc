@@ -37,9 +37,9 @@ filetype off                   " (1)
 
 set rtp+=~/.vim/vundle.git/    " (2)
 call vundle#rc()               " (3)
-
+Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-ref'
-Bundle 'vim-ruby/vim-ruby'
+Bundle 'Shougo/neocomplcache'
 
 filetype plugin indent on     " (5)
 
