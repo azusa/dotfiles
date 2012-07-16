@@ -179,5 +179,7 @@ call altr#define('app/models/%.rb', 'spec/models/%_spec.rb', 'spec/factories/%s.
 call altr#define('app/controllers/%.rb', 'spec/controllers/%_spec.rb')
 call altr#define('app/helpers/%.rb', 'spec/helpers/%_spec.rb')
 
+let  g:rsenseHome="/opt/rsense"
+
 hi Comment ctermfg=lightcyan
 
