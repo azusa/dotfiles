@@ -30,6 +30,7 @@ call vundle#rc()               " (3)
 Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-ref'
 Bundle 'Shougo/neocomplcache'
+Bundle 'kana/vim-altr'
 
 filetype plugin indent on     " (5)
 
@@ -166,3 +167,15 @@ let g:rubycomplete_buffer_loading = 1
 
 	
 set clipboard=unnamed,autoselect
+
+nmap <F3> <Plug>(altr-forward)
+nmap <F2> <Plug>(altr-back)
+
+" For ruby tdd
+call altr#define('%.rb', 'spec/%_spec.rb')
+call altr#define('%.rb', '%_spec.rb')
+" " For rails tdd
+call altr#define('app/models/%.rb', 'spec/models/%_spec.rb', 'spec/factories/%s.rb')
+call altr#define('app/controllers/%.rb', 'spec/controllers/%_spec.rb')
+call altr#define('app/helpers/%.rb', 'spec/helpers/%_spec.rb')
+
