@@ -1,0 +1,3 @@
+let g:rsenseHome=expand('~/dotfiles/vim/rsense')
+let g:rsenseUseOmniFunc = 1
+
