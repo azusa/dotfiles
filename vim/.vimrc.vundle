@@ -1,0 +1,14 @@
+"vundle
+set nocompatible
+filetype off                   " (1)
+
+set rtp+=~/dotfiles/.vim/vundle.git/    " (2)
+call vundle#rc()               " (3)
+Bundle 'thinca/vim-quickrun'
+Bundle 'thinca/vim-ref'
+"Bundle 'Shougo/neocomplcache'
+Bundle 'kana/vim-altr'
+
+filetype plugin indent on     " (5)
+
+
