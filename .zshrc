@@ -19,6 +19,6 @@ export EDITOR=vi
 
 bindkey -e
 
-if [ -f .zshlocal ]; then
-	source .zshlocal
+if [ -f ~/.zshlocal ]; then
+	source ~/.zshlocal
 fi
