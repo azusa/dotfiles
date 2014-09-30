@@ -1,6 +1,6 @@
 startup_message off
 escape ^Z^Z
-hardstatus alwayslastline " %`%-w%{=b bw}%n %t%{-}%+w"
+hardstatus alwayslastline "%-w%{= ck}%n %t%{-}%+w"
 termcapinfo xterm* ti@:te@
 
 #rvm
