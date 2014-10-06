@@ -6,7 +6,9 @@ SAVEHIST=10000
 setopt share_history
 autoload -U compinit
 autoload -Uz add-zsh-hook
+autoload -Uz vcs_info
 compinit
+setopt prompt_subst
 
 alias ll=ls -al
 
@@ -15,6 +17,8 @@ stty stop undef
 RPROMPT='[%~]'
 SPROMPT="%r is correct? [n,y,a,e]: " 
 #export EDITOR=vi
+zstyle ':vcs_info:*' formats '%s][* %F{green}%b%f'    
+zstyle ':vcs_info:*' actionformats '%s][* %F{green}%b%f(%F{red}%a%f)'
 
 export EDITOR=vi
 
@@ -24,6 +28,7 @@ if [ -f ~/.zshlocal ]; then
 	source ~/.zshlocal
 fi
 
+
 case $TERM in
     screen)
         preexec() {
@@ -31,10 +36,14 @@ case $TERM in
         }
         precmd() {
             echo -ne "\ek$(basename $SHELL)\e\\"
-        }
+            vcs_info
+    }
         ;;
     *)
         precmd() {
-        }
+            vcs_info
+	}
         ;;
 esac
+
+PROMPT='[${vcs_info_msg_0_}]:%(!.#.$) '   
