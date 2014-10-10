@@ -14,7 +14,6 @@ alias ll=ls -al
 
 stty stop undef
 #export LANG=ja_JP.eucJP
-RPROMPT='[%~]'
 SPROMPT="%r is correct? [n,y,a,e]: " 
 #export EDITOR=vi
 zstyle ':vcs_info:*' formats '%s][* %F{green}%b%f'    
@@ -46,4 +45,5 @@ case $TERM in
         ;;
 esac
 
+RPROMPT='[%~]'
 PROMPT='[${vcs_info_msg_0_}]:%(!.#.$) '   
