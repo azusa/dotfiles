@@ -20,4 +20,8 @@ autocmd BufNewFile *[^_spec].rb 0r $HOME/dotfiles/vim/template/ruby
 
 hi Comment ctermfg=lightcyan
 
-
+if has("win32")
+	:set directory=C:/temp
+	:set backupdir=C:/temp
+	:set undodir=C:/temp
+endif
