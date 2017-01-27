@@ -24,4 +24,6 @@ if has("win32")
 	:set directory=C:/temp
 	:set backupdir=C:/temp
 	:set undodir=C:/temp
+        :set fileformat=unix
+	:set fileformats=unix,dos,mac
 endif
