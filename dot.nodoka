@@ -1,0 +1,14 @@
+include "109.nodoka"
+    
+key *Esc = *半角/全角
+key *半角/全角 = *Esc
+
+#mod control -= LCtrl
+#key *LCtrl= *英数
+    
+# CapsLockをControlに
+def subst *英数 = *英数 #from http://d.hatena.ne.jp/kaosf/20101120
+mod control += !英数
+key *英数 = *LCtrl
+
+key *変換 = $ToggleIME
