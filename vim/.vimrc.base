@@ -10,15 +10,6 @@ syntax on
 filetype on
 filetype indent on
 filetype plugin on
-setlocal omnifunc=syntaxcomplete#Complete
-
-
-
-set t_kb=
-autocmd BufNewFile *_spec.rb 0r $HOME/dotfiles/vim/template/rspec
-autocmd BufNewFile *[^_spec].rb 0r $HOME/dotfiles/vim/template/ruby
-
-hi Comment ctermfg=lightcyan
 
 if has("win32")
 	:set directory=C:/temp
